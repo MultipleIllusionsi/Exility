@@ -9,20 +9,12 @@ module.exports = {
         use: ["html-loader"],
       },
       {
-        test: /\.(svg|png|jpg|gif)$/,
-        use: {
-          loader: "url-loader",
-          options: {
-            fallback: require.resolve("file-loader"),
-            esModule: false,
-          },
-          // loader: "file-loader",
-          // options: {
-          //   name: "[name].[hash].[ext]",
-          //   outputPath: "imgs",
-          //   esModule: false,
-          // },
-        },
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
       },
     ],
   },
