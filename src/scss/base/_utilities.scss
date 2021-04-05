@@ -1,3 +1,38 @@
 .logo {
   cursor: pointer;
 }
+
+.section__wrapper {
+  margin-top: 200px;
+}
+
+.sm-cl {
+  max-width: 520px;
+  min-width: 520px;
+
+  @include response(notebook) {
+    max-width: 400px;
+    min-width: 400px;
+  }
+
+  @include response(tab-land) {
+    max-width: 280px;
+    min-width: 280px;
+  }
+}
+
+.lg-cl {
+  max-width: 600px;
+
+  @include response(notebook) {
+    max-width: 480px;
+  }
+
+  @include response(tab-land) {
+    max-width: 280px;
+  }
+}
+
+.mr-20 {
+  margin-right: 20px;
+}

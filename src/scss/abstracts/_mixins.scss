@@ -1,25 +1,25 @@
 @mixin response($breakpoint) {
   @if $breakpoint==phone {
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 320px) {
       @content;
     }
   }
 
   @if $breakpoint==tab-port {
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 640px) {
       @content;
     }
   }
 
   @if $breakpoint==tab-land {
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1000px) {
       @content;
     }
   }
 
-  //   @if $breakpoint == big-desktop {
-  //     @media only screen and (min-width: 1800px) {
-  //       @content;
-  //     }
-  //   }
+  @if $breakpoint==notebook {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+  }
 }
