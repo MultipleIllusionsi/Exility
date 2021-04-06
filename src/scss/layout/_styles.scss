@@ -1,0 +1,29 @@
+.styles {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+
+    & h2 {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__img {
+    width: 45%;
+
+    & img {
+      width: 100%;
+      object-fit: cover;
+
+      @include response(tab-land) {
+        height: 600px;
+      }
+    }
+  }
+
+  &__text {
+    margin-left: 80px;
+    width: 600px;
+  }
+}

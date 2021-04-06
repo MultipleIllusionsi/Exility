@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/fonts/fonts.css" />
-
     <title>Exility</title>
   </head>
   <body>
+    <!-- Обложка -->
     <header>
       <nav class="header__nav">
         <div class="header__nav__left-side">
@@ -51,8 +51,9 @@
       </div>
     </header>
 
+    <!-- О проекте -->
     <section class="section__wrapper about__wrapper">
-      <h2 class="heading-secondary heading-secondary--bold sm-cl mr-20">
+      <h2 class="heading-secondary heading-secondary--bold sm-cl">
         Клубный дом EXILITY
       </h2>
       <div class="about__text lg-cl">
@@ -70,6 +71,7 @@
       </div>
     </section>
 
+    <!-- Местоположение -->
     <section class="section__wrapper placement__wrapper">
       <h2 class="heading-secondary heading-secondary--bold">
         ЦАО Пресненский район
@@ -77,7 +79,7 @@
       <h3 class="heading-tertiary">ул. Климашкина, 16</h3>
 
       <div class="placement__text">
-        <div class="sm-cl mr-20">
+        <div class="sm-cl">
           <p class="regular-text paragraph-spacing">
             Пресненский район считается одним из лучших в Москве: развитая
             социальная инфраструктура, удобная транспортная доступность,
@@ -97,6 +99,7 @@
       </div>
     </section>
 
+    <!-- Карта -->
     <section>
       <iframe
         frameborder="0"
@@ -108,8 +111,100 @@
       ></iframe>
     </section>
 
-    <section class="section__wrapper advantages">
+    <!-- Преимущества -->
+    <section class="section__wrapper advantages__wrapper">
       <h2 class="heading-secondary heading-secondary--bold">Преимущества</h2>
+
+      <div class="advantages__cards__slider">
+        <div id="slider" class="advantages__cards__slider__inner">
+          <figure class="advantages__cards__item">
+            <div class="advantages__cards__item__overlay"></div>
+            <img src="./assets/UnicArch.jpg" alt="Уникальная архитектура" />
+            <figcaption class="heading-tertiary">
+              Уникальная архитектура
+            </figcaption>
+          </figure>
+
+          <figure class="advantages__cards__item">
+            <div class="advantages__cards__item__overlay"></div>
+            <img src="./assets/Fitness.jpg" alt="Фитнес зона" />
+            <figcaption class="heading-tertiary">Фитнес зона</figcaption>
+          </figure>
+
+          <figure class="advantages__cards__item">
+            <div class="advantages__cards__item__overlay"></div>
+            <img src="./assets/Penthouse.jpg" alt="Пентхаусы: 5м потолки" />
+            <figcaption class="heading-tertiary">
+              Пентхаусы: 5м потолки
+            </figcaption>
+          </figure>
+
+          <figure class="advantages__cards__item">
+            <div class="advantages__cards__item__overlay"></div>
+            <img src="./assets/Terrace.jpg" alt="Просторные террасы" />
+            <figcaption class="heading-tertiary">Просторные террасы</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="advantages__arrows">
+        <svg
+          id="left-arrow"
+          width="41"
+          height="16"
+          viewBox="0 0 41 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928935C7.68054 0.538411 7.04738 0.538411 6.65685 0.928935L0.292892 7.2929ZM41 7L1 7L1 9L41 9L41 7Z"
+            fill="#BDBDBD"
+          />
+        </svg>
+        <svg
+          id="right-arrow"
+          width="41"
+          height="16"
+          viewBox="0 0 41 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M40.7071 8.70711C41.0976 8.31658 41.0976 7.68342 40.7071 7.29289L34.3431 0.928932C33.9526 0.538408 33.3195 0.538408 32.9289 0.928932C32.5384 1.31946 32.5384 1.95262 32.9289 2.34315L38.5858 8L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM0 9H40V7H0V9Z"
+            fill="#BDBDBD"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Стиль -->
+    <section class="section__wrapper styles__wrapper">
+      <div class="styles__img"><img src="./assets/Styles.jpg" alt="" /></div>
+
+      <div class="styles__text">
+        <h2 class="heading-secondary heading-secondary--bold">Стиль</h2>
+        <div>
+          <p class="regular-text paragraph-spacing">
+            Главный фасад здания исполнен в неоклассическом стиле с выступающими
+            деталями и большим количество окон. Это четко очерченная композиция
+            из полированного гранита с элементами рустики, крупноформатного
+            керамогранита и декоративными элементами, выполненными на заказ
+          </p>
+          <p class="regular-text">
+            В основе интерьеров приоритет — это эстетика, где роскошь сочетается
+            с комфортом, в неё идеально вписываются любые технические приборы и
+            устройства. Это позволяет создавать актуальные и модные решения
+            устоявшейся классики
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Предложение -->
+    <section class="section__wrapper offer__wrapper">
+      <h2 class="heading-secondary heading-secondary--bold sm-cl">
+        Семь этажей и 90 апартаментов
+      </h2>
     </section>
   </body>
 </html>

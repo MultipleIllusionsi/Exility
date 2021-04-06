@@ -4,35 +4,48 @@
 
 .section__wrapper {
   margin-top: 200px;
+
+  @include response(notebook) {
+    margin-top: 160px;
+  }
+
+  @include response(tab-land) {
+    margin-top: 120px;
+  }
+
+  @include response(tab-port) {
+    margin-top: 100px;
+  }
 }
 
 .sm-cl {
-  max-width: 520px;
-  min-width: 520px;
+  max-width: 43.334%;
+  min-width: 43.334%;
+  // max-width: 520px;
+  // min-width: 520px;
 
   @include response(notebook) {
-    max-width: 400px;
-    min-width: 400px;
+    max-width: 41.667%;
+    min-width: 41.667%;
+    // max-width: 400px;
+    // min-width: 400px;
   }
 
-  @include response(tab-land) {
-    max-width: 280px;
-    min-width: 280px;
-  }
+  // @include response(tab-land) {
+  //   max-width: 280px;
+  //   min-width: 280px;
+  // }
 }
 
 .lg-cl {
-  max-width: 600px;
+  max-width: 50%;
+  // max-width: 600px;
 
-  @include response(notebook) {
-    max-width: 480px;
-  }
+  // @include response(notebook) {
+  //   max-width: 480px;
+  // }
 
-  @include response(tab-land) {
-    max-width: 280px;
-  }
-}
-
-.mr-20 {
-  margin-right: 20px;
+  // @include response(tab-land) {
+  //   max-width: 280px;
+  // }
 }
