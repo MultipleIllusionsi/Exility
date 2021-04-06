@@ -9,4 +9,23 @@
       margin-bottom: 80px;
     }
   }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      align-items: baseline;
+      display: flex;
+      flex-direction: column;
+
+      & h3 {
+        margin: 40px 0 20px;
+      }
+
+      & button {
+        margin: 40px 0 20px;
+      }
+    }
+  }
 }

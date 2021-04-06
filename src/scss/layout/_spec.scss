@@ -1,0 +1,11 @@
+.spec {
+  &__wrapper {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 260px auto 0;
+
+    & h2 {
+      margin-bottom: 80px;
+    }
+  }
+}

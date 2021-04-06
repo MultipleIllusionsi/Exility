@@ -39,4 +39,13 @@
   &:hover::before {
     transform: translate3d(100%, 0, 0);
   }
+
+  &--outline {
+    border: 1px solid #000;
+    background: #000;
+
+    &::before {
+      background: white;
+    }
+  }
 }
