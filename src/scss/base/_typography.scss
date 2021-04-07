@@ -16,6 +16,10 @@
     font-weight: 300;
   }
 
+  &--regular {
+    font-weight: 400;
+  }
+
   &--bold {
     font-weight: 700;
   }
@@ -31,17 +35,34 @@
   font-weight: 400;
 }
 
-.regular-text {
+.text {
   font-size: 18px;
-  font-weight: 400;
   line-height: 150%;
   color: #222;
-
   @include response(tab-port) {
     font-size: 16px;
+  }
+
+  &--regular {
+    font-weight: 400;
+  }
+
+  &--bold {
+    font-weight: 700;
   }
 }
 
 .paragraph-spacing {
   margin-bottom: 12px;
+}
+
+.caption {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+
+  &--italic-bold {
+    font-weight: 500;
+    font-style: italic;
+  }
 }

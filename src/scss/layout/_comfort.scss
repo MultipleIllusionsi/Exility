@@ -14,26 +14,8 @@
     }
   }
 
-  &__slider {
+  &__img {
     width: 45.57%;
-    position: relative;
-
-    &__arrows {
-      margin-top: 60px;
-      position: absolute;
-
-      & svg {
-        cursor: pointer;
-        transition: 0.2s all ease-in-out;
-
-        &:hover path {
-          fill: #333;
-        }
-        &:first-child {
-          margin-right: 30px;
-        }
-      }
-    }
 
     & img {
       width: 100%;

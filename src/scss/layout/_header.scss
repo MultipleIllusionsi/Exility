@@ -44,6 +44,12 @@
       &-wrapper {
         margin-left: 80px;
         display: flex;
+
+        & .link--nav {
+          &:not(:first-of-type) {
+            margin-left: 40px;
+          }
+        }
       }
     }
   }

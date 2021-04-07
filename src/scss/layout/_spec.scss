@@ -2,10 +2,32 @@
   &__wrapper {
     max-width: 1240px;
     padding: 0 20px;
-    margin: 260px auto 0;
+    margin-left: auto;
+    margin-right: auto;
 
     & h2 {
       margin-bottom: 80px;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    justify-content: space-between;
+    grid-row-gap: 60px;
+
+    @include response(tab-land) {
+      grid-template-columns: repeat(2, 340px);
+      grid-row-gap: 40px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      &__heading {
+        margin-bottom: 20px;
+      }
     }
   }
 }
