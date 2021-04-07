@@ -2,7 +2,9 @@
   &__wrapper {
     display: flex;
     align-items: center;
-    padding-right: 20px;
+    justify-content: space-between;
+    margin-right: calc((100% - 1200px) / 2);
+    // padding-right: 20px;
 
     & h2 {
       margin-bottom: 80px;
@@ -10,7 +12,12 @@
   }
 
   &__img {
-    width: 45.57%;
+    // width: 45.57%;
+    width: calc((100vw - 1200px) / 2 + 520px);
+
+    @include response(notebook) {
+      width: calc((100vw - 1200px) / 2 + 500px);
+    }
 
     & img {
       width: 100%;
