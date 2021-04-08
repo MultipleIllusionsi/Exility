@@ -37,7 +37,6 @@
       padding: 0 20px;
       margin-right: auto;
       margin-left: auto;
-      margin-top: 80px;
       position: relative;
 
       &__inner {
@@ -49,11 +48,24 @@
     &__item {
       &:not(:last-child) {
         margin-right: 40px;
+
+        @include response(tablet) {
+          margin-right: 20px;
+        }
+
+        @include response(phone) {
+          margin-right: 10px;
+        }
       }
 
+      position: relative;
       width: 400px;
       height: 550px;
-      position: relative;
+
+      @include response(tablet) {
+        width: 280px;
+        height: 380px;
+      }
 
       &__overlay {
         position: absolute;
@@ -77,6 +89,11 @@
         bottom: 30px;
         left: 30px;
         color: white;
+
+        @include response(tablet) {
+          left: 20px;
+          bottom: 20px;
+        }
       }
     }
   }
