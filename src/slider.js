@@ -1,4 +1,5 @@
 import debounce from "./debouce";
+// https://codepen.io/Multiple-Illusionsi/pen/PoobmzG
 
 const leftArrow = document.getElementById("left-arrow");
 const rightArrow = document.getElementById("right-arrow");
@@ -27,6 +28,8 @@ let position = 0;
 const getAllowedTranslates = () => {
   const windowWidth = window.innerWidth;
   if (windowWidth < 550) return 3;
+  if (windowWidth < 900) return 2;
+  if (windowWidth < 1000) return 1;
   if (windowWidth < 1300) return 2;
   return 1;
 };
