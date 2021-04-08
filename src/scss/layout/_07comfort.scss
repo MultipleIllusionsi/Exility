@@ -7,31 +7,75 @@
     margin-left: auto;
     padding-left: 20px;
 
+    @include response(content-container) {
+      width: 100%;
+    }
+
+    @include response(phone) {
+      flex-direction: column;
+      padding-right: 20px;
+    }
+
     & h3 {
       margin-bottom: 40px;
     }
   }
 
   &__img {
-    width: calc(((100vw - var(--scrollbar-width)) - 1200px) / 2 + 520px);
+    max-width: calc(
+      ((100vw - var(--scrollbar-width)) - 1200px) / 2 + (1200px * 0.43334)
+    );
+    min-width: calc(
+      ((100vw - var(--scrollbar-width)) - 1200px) / 2 + (1200px * 0.43334)
+    );
 
     @include response(notebook) {
-      width: calc(((100vw - var(--scrollbar-width)) - 1200px) / 2 + 500px);
+      max-width: calc(
+        ((100vw - var(--scrollbar-width)) - 1200px) / 2 + (1200px * 0.41667)
+      );
+      min-width: calc(
+        ((100vw - var(--scrollbar-width)) - 1200px) / 2 + (1200px * 0.41667)
+      );
+    }
+
+    @include response(content-container) {
+      max-width: calc((100% + 20px) * 0.41667);
+      min-width: calc((100% + 20px) * 0.41667);
+    }
+
+    @include response(tablet) {
+      max-width: calc((100% + 20px) * 0.46667);
+      min-width: calc((100% + 20px) * 0.46667);
+    }
+
+    @include response(phone) {
+      margin-top: 40px;
+      max-width: 100%;
+      min-width: 100%;
     }
 
     & img {
       width: 100%;
       object-fit: cover;
       height: 600px;
+
+      @include response(phone) {
+        height: 400px;
+      }
     }
   }
 
   &__text {
-    // width: 600px;
-    // max-width: 40%;
-    // min-width: 40%;
+    max-width: calc((100% + 20px) * 0.5);
+    margin-right: 80px;
 
-    max-width: 42.858%;
-    min-width: 42.858%;
+    @include response(tablet) {
+      margin-right: 40px;
+    }
+
+    @include response(phone) {
+      max-width: 100%;
+      margin-right: 0;
+    }
   }
 }

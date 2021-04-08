@@ -50,15 +50,6 @@
 
 .lg-cl {
   max-width: 50%;
-  // max-width: 600px;
-
-  // @include response(notebook) {
-  //   max-width: 480px;
-  // }
-
-  // @include response(tablet) {
-  //   max-width: 280px;
-  // }
 
   @include response(phone) {
     max-width: 100%;
