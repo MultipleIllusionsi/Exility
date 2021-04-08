@@ -29,6 +29,14 @@
         width: 100%;
         height: 600px;
         object-fit: cover;
+
+        @include response(tablet) {
+          height: 380px;
+        }
+
+        @include response(phone) {
+          height: 300px;
+        }
       }
 
       & h3 {

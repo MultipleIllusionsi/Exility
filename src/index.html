@@ -24,6 +24,7 @@
         </div>
 
         <img
+          id="open-modal"
           class="header__nav__hamburger-icon"
           src="./assets/Hamburger.svg"
           alt=""
@@ -62,6 +63,40 @@
         />
       </div>
     </header>
+
+    <!-- Модальное меню -->
+    <section id="modal" class="modal">
+      <div class="modal__content">
+        <svg
+          id="close-modal"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M36.373 40L20.0129 23.6247L3.65273 40L0 36.3496L16.3859 20L0 3.65039L3.65273 0L20.0129 16.3753L36.373 0.0257075L40 3.65039L23.6399 20L40 36.3496L36.373 40Z"
+            fill="white"
+          />
+        </svg>
+
+        <h1 class="heading-primary">Exility</h1>
+
+        <div id="modal-links" class="modal__content__links">
+          <a href="#about" class="heading-secondary heading-secondary--light"
+            >О проекте</a
+          >
+          <a href="#offer" class="heading-secondary heading-secondary--light">
+            Предложения
+          </a>
+          <a href="#contacts" class="heading-secondary heading-secondary--light"
+            >Контакты</a
+          >
+        </div>
+      </div>
+      <img class="modal__img" src="./assets/HeaderImg.jpg" alt="Exility" />
+    </section>
 
     <!-- О проекте -->
     <section id="about" class="section__wrapper about__wrapper">
