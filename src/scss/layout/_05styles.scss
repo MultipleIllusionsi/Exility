@@ -1,0 +1,29 @@
+.styles {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(1220px + (100% - 1200px) / 2);
+    margin-right: auto;
+    padding-right: 20px;
+  }
+
+  &__img {
+    width: calc(((100vw - var(--scrollbar-width)) - 1200px) / 2 + 520px);
+
+    @include response(notebook) {
+      width: calc(((100vw - var(--scrollbar-width)) - 1200px) / 2 + 500px);
+    }
+
+    & img {
+      width: 100%;
+      object-fit: cover;
+      height: 600px;
+    }
+  }
+
+  &__text {
+    margin-left: 80px;
+    max-width: 600px;
+  }
+}

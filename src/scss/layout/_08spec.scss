@@ -4,21 +4,23 @@
     padding: 0 20px;
     margin-left: auto;
     margin-right: auto;
-
-    & h2 {
-      margin-bottom: 80px;
-    }
   }
 
   &__cards {
     display: grid;
-    grid-template-columns: repeat(3, 340px);
+    grid-template-columns: repeat(3, minmax(280px, 340px));
     justify-content: space-between;
     grid-row-gap: 60px;
+    grid-column-gap: 40px;
 
-    @include response(tab-land) {
-      grid-template-columns: repeat(2, 340px);
+    @include response(tablet) {
+      grid-template-columns: repeat(2, minmax(280px, 340px));
       grid-row-gap: 40px;
+    }
+
+    @include response(phone) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 20px;
     }
 
     &__item {
@@ -27,6 +29,10 @@
 
       &__heading {
         margin-bottom: 20px;
+
+        @include response(phone) {
+          margin-bottom: 10px;
+        }
       }
     }
   }

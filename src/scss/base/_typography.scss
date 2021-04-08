@@ -3,6 +3,10 @@
   font-weight: 400;
   letter-spacing: 10px;
   text-transform: uppercase;
+
+  @include response(phone) {
+    font-size: 56px;
+  }
 }
 
 .heading-secondary {
@@ -24,7 +28,7 @@
     font-weight: 700;
   }
 
-  @include response(tab-port) {
+  @include response(tablet) {
     font-size: 30px;
   }
 }
@@ -33,13 +37,17 @@
   font-size: 28px;
   line-height: 125%;
   font-weight: 400;
+
+  @include response(tablet) {
+    font-size: 22px;
+  }
 }
 
 .text {
   font-size: 18px;
   line-height: 150%;
   color: #222;
-  @include response(tab-port) {
+  @include response(tablet) {
     font-size: 16px;
   }
 

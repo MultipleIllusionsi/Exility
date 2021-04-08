@@ -16,6 +16,11 @@
       @include response(notebook) {
         display: block;
       }
+
+      @include response(tablet) {
+        width: 35px;
+        height: 20px;
+      }
     }
 
     &__left-side {
@@ -30,6 +35,12 @@
     &__right-side {
       display: flex;
       align-items: center;
+
+      & button {
+        @include response(tablet) {
+          display: none;
+        }
+      }
     }
 
     &__phone {
@@ -38,6 +49,14 @@
       font-weight: 500;
       line-height: 140%;
       color: #222;
+
+      @include response(tablet) {
+        margin-right: 0;
+      }
+
+      @include response(phone) {
+        font-size: 16px;
+      }
     }
 
     &__links {
@@ -66,12 +85,49 @@
       top: 260px;
       text-align: center;
 
+      @include response(tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      @include response(phone) {
+        width: 100%;
+        padding: 0 20px;
+      }
+
+      & button {
+        display: none;
+
+        @include response(tablet) {
+          display: block;
+          margin-top: 100px;
+          padding: 20px 70px;
+        }
+
+        @include response(phone) {
+          margin-top: 80px;
+          width: 100%;
+        }
+      }
+
       &__heading {
         margin-bottom: 40px;
+
+        @include response(phone) {
+          margin-bottom: 20px;
+        }
       }
 
       &__subheading {
         max-width: 550px;
+        font-size: 40px;
+
+        @include response(phone) {
+          font-size: 30px;
+        }
       }
     }
 

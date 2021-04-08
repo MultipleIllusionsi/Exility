@@ -21,6 +21,10 @@
   &::placeholder {
     color: #bdbdbd;
   }
+
+  @include response(phone) {
+    width: 100%;
+  }
 }
 
 .textarea {

@@ -1,0 +1,99 @@
+.footer {
+  background: #222;
+  color: white;
+
+  & .link--nav {
+    color: white;
+  }
+
+  &__wrapper {
+    max-width: 1240px;
+    padding: 60px 20px 40px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    @include response(tablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-column-gap: 60px;
+    grid-row-gap: 20px;
+
+    @include response(tablet) {
+      grid-column-gap: 40px;
+    }
+
+    @include response(phone) {
+      grid-template-columns: repeat(1, max-content);
+      grid-column-gap: 20px;
+      order: 1;
+    }
+  }
+
+  &__left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include response(tablet) {
+      margin-top: 60px;
+      flex-direction: row;
+      align-items: flex-end;
+      order: 1;
+    }
+
+    @include response(phone) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      & .logo {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__right-side {
+    display: flex;
+    align-items: flex-start;
+
+    @include response(tablet) {
+      justify-content: space-between;
+    }
+
+    @include response(phone) {
+      flex-direction: column;
+    }
+  }
+
+  &__contacts {
+    margin-left: 140px;
+    width: 220px;
+    & a {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    & .link--nav {
+      cursor: default;
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    @include response(tablet) {
+      margin-left: 0;
+    }
+
+    @include response(phone) {
+      margin-bottom: 60px;
+    }
+  }
+}

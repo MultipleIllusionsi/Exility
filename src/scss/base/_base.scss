@@ -12,6 +12,10 @@ html {
   font-family: "SF Pro Display", sans-serif;
 }
 
+body {
+  min-width: 320px;
+}
+
 a {
   text-decoration: none;
   color: inherit;

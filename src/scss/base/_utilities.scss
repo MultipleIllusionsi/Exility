@@ -9,11 +9,11 @@
     margin-top: 160px;
   }
 
-  @include response(tab-land) {
+  @include response(tablet) {
     margin-top: 120px;
   }
 
-  @include response(tab-port) {
+  @include response(phone) {
     margin-top: 100px;
   }
 }
@@ -35,10 +35,17 @@
     // min-width: 400px;
   }
 
-  // @include response(tab-land) {
-  //   max-width: 280px;
-  //   min-width: 280px;
-  // }
+  @include response(tablet) {
+    max-width: 46.667%;
+    min-width: 46.667%;
+    //   max-width: 280px;
+    //   min-width: 280px;
+  }
+
+  @include response(phone) {
+    max-width: 100%;
+    min-width: 100%;
+  }
 }
 
 .lg-cl {
@@ -49,7 +56,23 @@
   //   max-width: 480px;
   // }
 
-  // @include response(tab-land) {
+  // @include response(tablet) {
   //   max-width: 280px;
   // }
+
+  @include response(phone) {
+    max-width: 100%;
+  }
+}
+
+section .heading-secondary {
+  margin-bottom: 80px;
+
+  @include response(notebook) {
+    margin-bottom: 60px;
+  }
+
+  @include response(tablet) {
+    margin-bottom: 40px;
+  }
 }

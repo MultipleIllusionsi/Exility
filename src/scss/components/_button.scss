@@ -8,6 +8,10 @@
   line-height: 140%;
   overflow: hidden;
 
+  @include response(tablet) {
+    font-size: 18px;
+  }
+
   &::before,
   &::after {
     position: absolute;
@@ -51,6 +55,7 @@
 
   &--gray {
     background: #bdbdbd;
+    border: none;
 
     & span {
       color: #222;
