@@ -73,8 +73,21 @@
   }
 
   &__contacts {
-    margin-left: 140px;
+    margin-left: 130px;
     width: 220px;
+
+    @include response(notebook) {
+      margin-left: 80px;
+    }
+
+    @include response(tablet) {
+      margin-left: 0;
+    }
+
+    @include response(phone) {
+      margin-bottom: 60px;
+    }
+
     & a {
       display: block;
       margin-bottom: 30px;
@@ -86,14 +99,6 @@
       &:not(:last-child) {
         margin-bottom: 10px;
       }
-    }
-
-    @include response(tablet) {
-      margin-left: 0;
-    }
-
-    @include response(phone) {
-      margin-bottom: 60px;
     }
   }
 }

@@ -88,6 +88,10 @@
   & svg {
     cursor: pointer;
 
+    & path {
+      fill: #bdbdbd;
+    }
+
     @include response(tablet) {
       width: 35px;
     }
