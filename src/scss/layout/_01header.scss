@@ -36,7 +36,7 @@
       display: flex;
       align-items: center;
 
-      & button {
+      & a.button {
         @include response(tablet) {
           display: none;
         }
@@ -98,17 +98,20 @@
         padding: 0 20px;
       }
 
-      & button {
+      & a {
         display: none;
+        padding: 20px 70px;
 
         @include response(tablet) {
           display: block;
           margin-top: 100px;
-          padding: 20px 70px;
         }
 
         @include response(phone) {
           margin-top: 80px;
+        }
+
+        @include response(phone) {
           width: 100%;
         }
       }
